@@ -6,7 +6,7 @@
 //  Copyright © 2019 Andrei Villasana. All rights reserved.
 //
 
-protocol Endpoint {
+public protocol Endpoint {
     associatedtype Model: Codable
 
     var url: URL { get }

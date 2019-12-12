@@ -6,7 +6,7 @@
 //  Copyright © 2019 Andrei Villasana. All rights reserved.
 //
 
-@testable import Sushi
+import Sushi
 
 struct ExampleJSONModel: Codable {
     let userId: Int

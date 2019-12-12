@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HTTP<E: Endpoint> {
+public struct HTTP<E: Endpoint> {
     private let decoder = JSONDecoder()
     private let session = URLSession.shared
     var endpoint: E
