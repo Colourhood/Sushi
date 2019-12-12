@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  A library to fetch network requests that automatically decodes json structures
+  A library to fetch network requests with json decoding
                    DESC
 
   spec.homepage     = "https://github.com/Colourhood/Sushi"
