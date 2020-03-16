@@ -6,8 +6,21 @@
 //  Copyright © 2019 Andrei Villasana. All rights reserved.
 //
 
+public enum HTTPTypes {
+    case GET, POST
+}
+
 public protocol Endpoint {
     associatedtype Model: Codable
 
-    var url: URL { get }
+    var http: HTTPTypes { get }
+    var urlRequest: URLRequest { get }
 }
+
+//public protocol GETEndpoint: BaseEndpoint{
+//    var url: URL { get }
+//}
+//
+//public protocol POSTEndpoint: BaseEndpoint {
+//    var url: URLRequest { get }
+//}

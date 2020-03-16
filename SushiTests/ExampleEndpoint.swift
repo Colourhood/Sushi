@@ -18,7 +18,10 @@ struct ExampleJSONModel: Codable {
 struct ExampleEndpoint: Endpoint {
     typealias Model = ExampleJSONModel
 
-    var url: URL {
-        return URL(string: "https://jsonplaceholder.typicode.com/todos/1")!
+    var http: HTTPTypes = .GET
+    var urlRequest: URLRequest {
+        let url = URL(string: "https://jsonplaceholder.typicode.com/todos/1")!
+
+        return URLRequest(url: url)
     }
 }

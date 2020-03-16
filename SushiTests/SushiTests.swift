@@ -12,10 +12,10 @@ import XCTest
 class SushiTests: XCTestCase {
 
     var endpoint = ExampleEndpoint()
-    var http: HTTP<ExampleEndpoint>!
+    var sushi: Sushi!
 
     override func setUp() {
-        http = HTTP(endpoint: endpoint)
+        sushi = Sushi()
     }
 
     override func tearDown() {
@@ -25,7 +25,7 @@ class SushiTests: XCTestCase {
     func testExample() {
         let expectation = XCTestExpectation(description: "Fetch data")
 
-        http.request(success: { (data) in
+        sushi.request(endpoint: endpoint, success: { (data) in
             XCTAssertNotNil(data, "We received data: \(data)")
             expectation.fulfill()
         }, failure: { (error) in

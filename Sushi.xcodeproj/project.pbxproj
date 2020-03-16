@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		548703B823A1F34C00BAEBA3 /* Sushi.h in Headers */ = {isa = PBXBuildFile; fileRef = 548703B623A1F34C00BAEBA3 /* Sushi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		548703BF23A1FBA300BAEBA3 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703BE23A1FBA300BAEBA3 /* HTTP.swift */; };
+		548703BF23A1FBA300BAEBA3 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703BE23A1FBA300BAEBA3 /* Sushi.swift */; };
 		548703C123A1FD5300BAEBA3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703C023A1FD5300BAEBA3 /* Endpoint.swift */; };
 		548703F023A1FECE00BAEBA3 /* SushiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703EF23A1FECE00BAEBA3 /* SushiTests.swift */; };
 		548703F223A1FECE00BAEBA3 /* Sushi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548703B323A1F34C00BAEBA3 /* Sushi.framework */; };
@@ -29,7 +29,7 @@
 		548703B323A1F34C00BAEBA3 /* Sushi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sushi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		548703B623A1F34C00BAEBA3 /* Sushi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sushi.h; sourceTree = "<group>"; };
 		548703B723A1F34C00BAEBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		548703BE23A1FBA300BAEBA3 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		548703BE23A1FBA300BAEBA3 /* Sushi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
 		548703C023A1FD5300BAEBA3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		548703ED23A1FECE00BAEBA3 /* SushiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		548703EF23A1FECE00BAEBA3 /* SushiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiTests.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			children = (
 				548703B623A1F34C00BAEBA3 /* Sushi.h */,
 				548703B723A1F34C00BAEBA3 /* Info.plist */,
-				548703BE23A1FBA300BAEBA3 /* HTTP.swift */,
+				548703BE23A1FBA300BAEBA3 /* Sushi.swift */,
 				548703C023A1FD5300BAEBA3 /* Endpoint.swift */,
 			);
 			path = Sushi;
@@ -206,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				548703C123A1FD5300BAEBA3 /* Endpoint.swift in Sources */,
-				548703BF23A1FBA300BAEBA3 /* HTTP.swift in Sources */,
+				548703BF23A1FBA300BAEBA3 /* Sushi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

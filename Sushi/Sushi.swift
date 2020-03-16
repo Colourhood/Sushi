@@ -8,18 +8,19 @@
 
 import Foundation
 
-public struct HTTP<E: Endpoint> {
+public struct Sushi {
     private let decoder = JSONDecoder()
     private let session = URLSession.shared
-    var endpoint: E
 
-    public func request(success: ((E.Model) -> Void)? = nil,
-                        failure: ((Error) -> Void)? = nil) {
+    public func request<E: Endpoint>(
+        endpoint: E,
+        success: ((E.Model) -> Void)? = nil,
+        failure: ((Error) -> Void)? = nil) {
 
-        session.dataTask(with: endpoint.url) { (data, response, error) in
+        session.dataTask(with: endpoint.urlRequest) { (data, response, error) in
             if let data = data {
                 do {
-                    let model: E.Model = try self.serializeJSON(data: data)
+                    let model: E.Model = try self.serializeJSON(endpoint: endpoint, data: data)
                     success?(model)
                 } catch (let serializationError) {
                     failure?(serializationError)
@@ -32,7 +33,8 @@ public struct HTTP<E: Endpoint> {
         }.resume()
     }
 
-    private func serializeJSON(data: Data) throws -> E.Model {
+
+    private func serializeJSON<E: Endpoint>(endpoint: E, data: Data) throws -> E.Model {
         return try decoder.decode(E.Model.self, from: data)
     }
 }
