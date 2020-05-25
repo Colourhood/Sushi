@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Sushi"
-  spec.version      = "1.0.1"
+  spec.version      = "1.2.0"
   spec.summary      = "Simple HTTP Networking in Swift"
 
   # This description is used to generate tags and improve search results.

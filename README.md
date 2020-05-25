@@ -5,11 +5,11 @@
 #### Cocoapods
 In your your `Podfile` file add the following...
 ```
-pod 'Sushi' '~> 1.0.1'
+pod 'Sushi' '~> 1.2.0'
 ```
 
 #### Carthage
-Support for carthage will be added in the next release
+Support for carthage will be added in a future release
 
 ### Guide/Documentation
 Sushi was designed around one particular objective - JSON decoding.
@@ -30,8 +30,8 @@ struct UserModel: Codable {
 An Endpoint is a representation of a network endpoint that contains information such as:
 
 `Model` - Data type represented from a request response.
-`http` - HTTP Method: GET, POST (others coming soon)
-`urlRequest` - A URLRequest object with valid information to open a request
+`httpMethod` - HTTP Method: GET, POST (others coming soon)
+`url` - A String with information to open a request
 
 ```
 import Sushi
@@ -39,12 +39,8 @@ import Sushi
 struct UserEndpoint: Endpoint {
     typealias Model = UserModel
 
-    var http: HTTPTypes = .GET
-    var urlRequest: URLRequest {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/todos/1")!
-
-        return URLRequest(url: url)
-    }
+    var httpMethod: HTTPMethod = .GET
+    var urlRequest: String = "https://jsonplaceholder.typicode.com/todos/1"
 }
 ```
 
