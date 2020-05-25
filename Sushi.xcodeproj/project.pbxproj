@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541ED96C247C71D100597A72 /* SushiErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541ED96B247C71D100597A72 /* SushiErrors.swift */; };
 		548703B823A1F34C00BAEBA3 /* Sushi.h in Headers */ = {isa = PBXBuildFile; fileRef = 548703B623A1F34C00BAEBA3 /* Sushi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		548703BF23A1FBA300BAEBA3 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703BE23A1FBA300BAEBA3 /* Sushi.swift */; };
-		548703C123A1FD5300BAEBA3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703C023A1FD5300BAEBA3 /* Endpoint.swift */; };
+		548703C123A1FD5300BAEBA3 /* EndpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703C023A1FD5300BAEBA3 /* EndpointModel.swift */; };
 		548703F023A1FECE00BAEBA3 /* SushiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703EF23A1FECE00BAEBA3 /* SushiTests.swift */; };
 		548703F223A1FECE00BAEBA3 /* Sushi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548703B323A1F34C00BAEBA3 /* Sushi.framework */; };
 		548703F923A1FFA000BAEBA3 /* ExampleEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548703F823A1FFA000BAEBA3 /* ExampleEndpoint.swift */; };
@@ -26,11 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		541ED96B247C71D100597A72 /* SushiErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiErrors.swift; sourceTree = "<group>"; };
 		548703B323A1F34C00BAEBA3 /* Sushi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sushi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		548703B623A1F34C00BAEBA3 /* Sushi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sushi.h; sourceTree = "<group>"; };
 		548703B723A1F34C00BAEBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		548703BE23A1FBA300BAEBA3 /* Sushi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
-		548703C023A1FD5300BAEBA3 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		548703C023A1FD5300BAEBA3 /* EndpointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointModel.swift; sourceTree = "<group>"; };
 		548703ED23A1FECE00BAEBA3 /* SushiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		548703EF23A1FECE00BAEBA3 /* SushiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiTests.swift; sourceTree = "<group>"; };
 		548703F123A1FECE00BAEBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +82,8 @@
 				548703B623A1F34C00BAEBA3 /* Sushi.h */,
 				548703B723A1F34C00BAEBA3 /* Info.plist */,
 				548703BE23A1FBA300BAEBA3 /* Sushi.swift */,
-				548703C023A1FD5300BAEBA3 /* Endpoint.swift */,
+				548703C023A1FD5300BAEBA3 /* EndpointModel.swift */,
+				541ED96B247C71D100597A72 /* SushiErrors.swift */,
 			);
 			path = Sushi;
 			sourceTree = "<group>";
@@ -205,7 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				548703C123A1FD5300BAEBA3 /* Endpoint.swift in Sources */,
+				548703C123A1FD5300BAEBA3 /* EndpointModel.swift in Sources */,
+				541ED96C247C71D100597A72 /* SushiErrors.swift in Sources */,
 				548703BF23A1FBA300BAEBA3 /* Sushi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

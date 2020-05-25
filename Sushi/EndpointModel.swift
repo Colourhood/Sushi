@@ -6,13 +6,17 @@
 //  Copyright © 2019 Andrei Villasana. All rights reserved.
 //
 
-public enum HTTPTypes {
+public enum HTTPMethod: String {
     case GET, POST
+
+    var string: String {
+        return self.rawValue
+    }
 }
 
-public protocol Endpoint {
+public protocol EndpointModel {
     associatedtype Model: Codable
 
-    var http: HTTPTypes { get }
-    var urlRequest: URLRequest { get }
+    var httpMethod: HTTPMethod { get }
+    var url: String { get }
 }

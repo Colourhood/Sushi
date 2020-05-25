@@ -15,13 +15,9 @@ struct ExampleJSONModel: Codable {
     let completed: Bool
 }
 
-struct ExampleEndpoint: Endpoint {
+struct ExampleEndpoint: EndpointModel {
     typealias Model = ExampleJSONModel
 
-    var http: HTTPTypes = .GET
-    var urlRequest: URLRequest {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/todos/1")!
-
-        return URLRequest(url: url)
-    }
+    var httpMethod: HTTPMethod = .GET
+    var url: String = "https://jsonplaceholder.typicode.com/todos/1"
 }
